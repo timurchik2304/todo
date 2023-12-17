@@ -1,12 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import {dataSlice} from "../features/data/dataSlice";
-import {idSlice} from "../features/idSlice";
-import {detailSlice} from "../features/data/detailedSlice";
+import { todoSlice } from "../features/toDO/toDoASlice";
+
 export const  store =  configureStore({
     reducer:{
-        data: dataSlice.reducer ,
-        id:idSlice.reducer,
-        detail:detailSlice.reducer,
-        
+        todos: todoSlice.reducer ,        
     },
 })

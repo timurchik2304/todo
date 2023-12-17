@@ -1,0 +1,7 @@
+.todo-list-item{
+    font-size: 20px;
+}
+
+.todo-list-item-completed{
+    text-decoration: line-through;
+}

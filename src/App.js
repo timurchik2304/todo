@@ -1,15 +1,11 @@
 import './App.css';
-import { Route,Routes } from 'react-router-dom';
-import Character from './pages/character/character';
-import DetailedInfo from './pages/detailed/detailedInfo';
+import ToDoList from './components/toDolist/toDoList';
 function App() {
 
   return (
     <div className="App">
-      <Routes>
-       <Route  path='/' element={<Character/>} />
-       <Route path='/detail' element={<DetailedInfo/>} />
-      </Routes>
+      <ToDoList></ToDoList>
+      
     </div>
   );
 }
